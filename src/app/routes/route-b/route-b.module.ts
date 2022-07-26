@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouteBComponent } from './route-b.component';
 import { RouterModule, Routes } from '@angular/router';
-import { ChildModule } from 'src/app/services/child.module';
+import { ChildModule } from '../../services/child.module';
 
 const routes: Routes = [
   {
