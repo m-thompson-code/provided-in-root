@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AsciiService } from 'src/app/services/ascii.service';
 
 @Component({
   selector: 'app-route-a',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouteAComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly asciiService: AsciiService) { }
 
   ngOnInit(): void {
+    this.asciiService.injectArt();
   }
 
 }
