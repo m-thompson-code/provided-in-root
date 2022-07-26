@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class AsciiService {
   injectArt(): void {
     const img = document.getElementsByTagName('img')[0]!;
